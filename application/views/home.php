@@ -37,7 +37,7 @@
 					
 					<div class="col-md-4">
 						<div class="card">
-							<img class="card-img-top" src="img/wd.jpg">
+							<img class="card-img-top" src="<?=base_url('assets/img/wd.jpg')?>">
 							<div class="card-body">
 								<h4 class="card-title">My title post</h4>
 								<p class="card-text">Lorem ipsum sit dolor amet puerto roco adios</p>
@@ -47,7 +47,7 @@
 					
 					<div class="col-md-4">
 						<div class="card">
-							<img class="card-img-top" src="assets/img/wd.jpg">
+							<img class="card-img-top" src="<?=base_url('assets/img/wd.jpg')?>">
 							<div class="card-body">
 								<h4 class="card-title">My title post</h4>
 								<p class="card-text">Lorem ipsum sit dolor amet puerto roco adios</p>
@@ -69,19 +69,19 @@
 				<div class="row">
 					<div class="col-md-4">
 						<center>
-							<img class="rounded" src="img/php.png" height="200" width="200">
+							<img class="rounded" src="<?=base_url('assets/img/php.png')?>" height="200" width="200">
 						</center>	
 					</div>
 					
 					<div class="col-md-4">
 						<center>
-							<img class="rounded-circle" src="img/html.jpg" height="200" width="200">
+							<img class="rounded-circle" src="<?=base_url('assets/img/html.jpg')?>" height="200" width="200">
 						</center>	
 					</div>
 					
 					<div class="col-md-4">
 						<center>
-							<img class="img-thumbnail" src="img/css.jpg" height="200" width="200">
+							<img class="img-thumbnail" src="<?=base_url('assets/img/css.jpg')?>" height="200" width="200">
 						</center>	
 					</div>
 				</div>
