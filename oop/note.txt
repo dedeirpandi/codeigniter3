@@ -1,0 +1,19 @@
+OOP (Object Oriented Programming)
+pemrograman berbasis objek
+
+
+class...
+{
+    ----;
+}
+
+
+mengakses class
+- yang bisa diakses
+  .atribut
+  .method
+
+-jenis akses
+ .public: bisa diakses oleh luar class da dalam class
+ .protected: bisa diakses oleh class turunan
+ .private: bisa diakses oleh class itu sendiri
