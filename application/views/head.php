@@ -8,7 +8,7 @@
 		<style>
 			#header{
 				height:400px;
-				background-image: url('img/background3.jpg');
+				background-image: url("<?=base_url('assets/img/background3.jpg')?>");
 				background-size: cover;
 			}
 			

@@ -5,10 +5,8 @@
 	</head>
 	
 	<body>
-    <?php $this->load->view("nav")?>
+		<?php $this->load->view("nav")?>
 		
-		
-				
 		<section id="post"> 
 			<div class="container">
 				<div class="row">
@@ -16,7 +14,7 @@
 						<div class="row">
 							<div class="col-md-4">
 								<div class="card">
-									<img class="card-img-top" src="img/wd.jpg">
+									<img class="card-img-top" src="<?=base_url("assets/img/wd.jpg")?>">
 									<div class="card-body">
 										<h4 class="card-title">My title post</h4>
 										<p class="card-text">Lorem ipsum sit dolor amet puerto roco adios</p>
@@ -26,7 +24,7 @@
 							
 							<div class="col-md-4">
 								<div class="card">
-									<img class="card-img-top" src="img/wd.jpg">
+									<img class="card-img-top" src="<?=base_url("assets/img/wd.jpg")?>">
 									<div class="card-body">
 										<h4 class="card-title">My title post</h4>
 										<p class="card-text">Lorem ipsum sit dolor amet puerto roco adios</p>
@@ -41,7 +39,7 @@
 							
 							<div class="col-md-4">
 								<div class="card">
-									<img class="card-img-top" src="img/wd.jpg">
+									<img class="card-img-top" src="<?=base_url('assets/img/wd.jpg')?>">
 									<div class="card-body">
 										<h4 class="card-title">My title post</h4>
 										<p class="card-text">Lorem ipsum sit dolor amet puerto roco adios</p>
@@ -51,7 +49,7 @@
 															
 							<div class="col-md-4">
 								<div class="card">
-									<img class="card-img-top" src="img/wd.jpg">
+									<img class="card-img-top" src="<?=base_url("assets/img/wd.jpg")?>">
 									<div class="card-body">
 										<h4 class="card-title">My title post</h4>
 										<p class="card-text">Lorem ipsum sit dolor amet puerto roco adios</p>
@@ -61,7 +59,7 @@
 							
 							<div class="col-md-4">
 								<div class="card">
-									<img class="card-img-top" src="img/wd.jpg">
+									<img class="card-img-top" src="<?=base_url("assets/img/wd.jpg")?>">
 									<div class="card-body">
 										<h4 class="card-title">My title post</h4>
 										<p class="card-text">Lorem ipsum sit dolor amet puerto roco adios</p>
@@ -71,7 +69,7 @@
 							
 							<div class="col-md-4">
 								<div class="card">
-									<img class="card-img-top" src="img/wd.jpg">
+									<img class="card-img-top" src="<?=base_url("assets/img/wd.jpg")?>">
 									<div class="card-body">
 										<h4 class="card-title">My title post</h4>
 										<p class="card-text">Lorem ipsum sit dolor amet puerto roco adios</p>
@@ -105,8 +103,6 @@
 				</div>
 			</div>		
 		</section>
-		
-				
-		<?php $this->load->view("footer")?>
+      		
 	</body>
 </html>

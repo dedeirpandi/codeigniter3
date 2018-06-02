@@ -20,10 +20,10 @@
 							<a class="dropdown-item" href="#">Link 3</a>
 						</div>
 					</li>
-					
+
 					<li class="nav-item">
 						<a class="nav-link" href="<?=base_url("index.php/contact")?>">Contact</a>
-					</li>
+					</li>					
 				</ul>
 			</div>
-		</nav>
+</nav>
