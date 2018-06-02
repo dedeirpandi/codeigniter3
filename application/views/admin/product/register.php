@@ -9,7 +9,7 @@
     
         <style>
             body{
-                background-color:#034f84;
+                background-color:#8FBC8F;
             }
             .container{
                 height:100%;
@@ -42,6 +42,12 @@
                         }
                     ?>
                 <form class="form" action="" method="post">
+                    
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" name="name" class="form-control">
+                    </div>
+
                     <div class="form-group">
                         <label>Email</label>
                         <input type="email" name="email" class="form-control">
@@ -51,9 +57,7 @@
                         <label>Password</label>
                         <input type="password" name="password" class="form-control">
                     </div>
-                    <button class="btn btn-primary" type="submit">Login</button>
-                    <br>
-                    <a href="<?=base_url('index.php/admin/product/register')?>" style="float:right; color:green; font-size:11px;">Register</a>
+                    <button class="btn btn-primary" type="submit">Register</button>                    
                 </form>
                 </div>
             </div>

@@ -12,11 +12,17 @@
             $data["content"]="admin/product/product";
             $data["product"]=$this->product_model->product_list();
             $this->load->view("admin/index",$data);
+           
         }
 
         function login()
         {
-            $this->load->view("login");
+            $this->load->view("admin/product/login");
+        }
+
+        function register()
+        {
+            $this->load->view("admin/product/register");
         }
 
         function product_update()
