@@ -11,6 +11,11 @@
 
         }
 
+        function product_list_limit($start,$limit)
+        {
+            return $this->db->get("product_tbl",$limit,$start)->result_array();
+        }
+
         function product_detil($product_id)
         {
             return $this->db->get_where("product_tbl",array("product_id",$product_id))->row_array();

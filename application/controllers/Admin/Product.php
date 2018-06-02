@@ -14,16 +14,7 @@
             $this->load->view("admin/index",$data);
            
         }
-
-        function login()
-        {
-            $this->load->view("admin/product/login");
-        }
-
-        function register()
-        {
-            $this->load->view("admin/product/register");
-        }
+        
 
         function product_update()
         {

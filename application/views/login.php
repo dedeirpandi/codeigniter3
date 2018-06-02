@@ -29,19 +29,18 @@
     <body>
         <div class="container">
             <div class="header-text">
-                <h1 align="center">PT. Alam Semesta Jaya</h1>
+                <h1 align="center">Login</h1>
             </div>
 
             <div class="card col-md-5">
                 <div class="card-body">
                     <?php
-                        if(isset($_SESSION["msg"]))
+                        if(!empty($err))
                         {
-                            echo $_SESSION["msg"];
-                            unset($_SESSION["msg"]);
+                            echo $err;
                         }
                     ?>
-                <form class="form" action="" method="post">
+                <form class="form" action="<?=base_url("index.php/auth/login_process")?>" method="post">
                     <div class="form-group">
                         <label>Email</label>
                         <input type="email" name="email" class="form-control">
@@ -53,7 +52,7 @@
                     </div>
                     <button class="btn btn-primary" type="submit">Login</button>
                     <br>
-                    <a href="<?=base_url('index.php/admin/product/register')?>" style="float:right; color:green; font-size:11px;">Register</a>
+                    <a href="<?=base_url('index.php/auth/register')?>" style="float:right; color:green; font-size:11px;">Register</a>
                 </form>
                 </div>
             </div>
