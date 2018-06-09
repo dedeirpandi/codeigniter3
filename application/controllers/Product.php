@@ -32,7 +32,7 @@
            $config['query_string_segment'] = 'page';  //query string
 
            // setting tampilan number
-           $config['full_tag_open'] = "<nav class='float-left'><ul class='pagination'>";
+           $config['full_tag_open'] = "<nav class='float-left' style='padding-top:15px;'><ul class='pagination'>";
            $config['full_tag_close'] = "</ul></nav>";
 
            $config['next_link'] = "&gt;";
