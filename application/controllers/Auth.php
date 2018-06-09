@@ -46,6 +46,7 @@
                 if(!empty($customer))
                 {
                 //session
+                    $this->session->set_userdata('user_id',$customer['user_id']);
                     $this->session->set_userdata('email',$email);
                     $this->session->set_userdata('name',$customer['name']);
                     

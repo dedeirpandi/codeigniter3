@@ -56,6 +56,20 @@
             $data["product"]= $this->product_model->product_list_limit($start,$limit);
             $this->load->view("product",$data);
         }
+
+        function search()
+        {
+            $keyword = $this->input->post("keyword");
+            
+            if(empyt($keyword))
+            {
+                redirect("index.php/product");
+            }            
+            $data["product"]= $this->product_model->search_product($keyword);
+            $data["page_number"] = "";
+            $data["keyword"] = $keyword;
+            $this->load->view("product",$data);
+        }
     }
 
 

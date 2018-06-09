@@ -15,8 +15,8 @@
                        
 						<nav class="navbar navbar-light bg-light">
 							<?=$page_number?>													
-							<form class="form-inline">								
-								<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+							<form action="<?=base_url("index.php/product/search")?>" method="post" class="form-inline">								
+								<input value="<?=$keyword = isset($keyword) ? $keyword:""?>" name="keyword" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 								<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 							</form>
 						</nav> 
@@ -35,7 +35,7 @@
 									<div class="card-body">                                    
 										<h4 class="card-title"><?=$row["product_title"]?></h4>
 										<p class="card-text"><?=$row["price"]?></p>
-                                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        <a href="<?=base_url("index.php/cart/add/$row[product_id]")?>" class="btn btn-primary">Add to Cart</a>
 									</div>					
 								</div>
 							</div>

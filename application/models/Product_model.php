@@ -18,12 +18,12 @@
 
         function product_detil($product_id)
         {
-            return $this->db->get_where("product_tbl",array("product_id",$product_id))->row_array();
+            // return $this->db->get_where("product_tbl",array("product_id",$product_id))->row_array();
              
-           //$str = "SELECT * FROM product_tbl WHERE product_id='$product_id'";
-           // $q = $this->db->query($str);
-            //$f = $q->result_array();
-            // return $f;
+            $str = "SELECT * FROM product_tbl WHERE product_id='$product_id'";
+            $q = $this->db->query($str);
+            $f = $q->row_array();
+             return $f;
         }
 
         function product_insert($arr)
@@ -61,6 +61,16 @@
             $this->db->where("product_id",$product_id);
             return $this->db->delete("product_tbl");
 
+        }
+
+        function search_product($keyword)
+        {
+            $str = "SELECT * FROM product_tbl WHERE ";
+            $str .="OR product_title LIKE '%$keyword%',";
+            $str .="OR product_desc LIKE '%$keyword%',";
+            $str .="OR price LIKE '%$keyword%'";
+
+            $q = $this->db->query($str);
         }
     }
 ?>
